@@ -5,9 +5,9 @@ import { CheckCircle2, Code2, Cpu, Rocket } from "lucide-react";
 
 export default function About() {
   const stats = [
-    { label: "Total Projects", value: "30+" },
-    { label: "Years Experience", value: "5+" },
-    { label: "Technologies Used", value: "15+" },
+    { label: "Total Projects", value: "10+" },
+    { label: "Years Experience", value: "2+" },
+    // { label: "Technologies Used", value: "15+" },
   ];
 
   const strengths = [

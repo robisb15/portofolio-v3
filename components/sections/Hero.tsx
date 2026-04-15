@@ -51,7 +51,7 @@ export default function Hero() {
             variants={itemVariants}
             className="text-5xl md:text-7xl font-bold font-poppins text-slate-800 dark:text-slate-100 tracking-tight"
           >
-            Hi, I'm <span className="text-gradient">John Doe</span>
+            Hi, I'm <span className="text-gradient">Robi Aulia Kurniawan</span>
           </motion.h1>
 
           <motion.div variants={itemVariants} className="text-xl md:text-3xl font-medium text-slate-600 dark:text-slate-400 h-16">
@@ -63,7 +63,11 @@ export default function Hero() {
                 2000,
                 "Backend Developer",
                 2000,
-                "UI/UX Enthusiast",
+                "Devs Ops Engineer",
+                2000,
+                "IT Operation",
+                2000,
+                "Database Engineer",
                 2000,
               ]}
               wrapper="span"

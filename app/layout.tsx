@@ -17,8 +17,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Professional Portfolio | Web Developer",
-  description: "Senior Frontend Architect & UI/UX Designer Portfolio. Showcasing modern web development projects.",
+  title: "Portfolio | Robi Aulia Kurniawan",
+  description: "Portfolio | Robi Aulia Kurniawan. Showcasing modern web development projects.",
 };
 
 export const viewport: Viewport = {
