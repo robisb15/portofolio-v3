@@ -78,17 +78,7 @@ export default function Navbar() {
             </a>
           ))}
           
-          {mounted && (
-            // <button
-            //   onClick={() => setTheme(theme === "dark" ?"dark" : "dark")}
-            //   // onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            //   className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-sky-500"
-            //   aria-label="Toggle Dark Mode"
-            // >
-            //   {theme === "dark" ? <Moon size={18} className="text-slate-700" /> : <Moon size={18} className="text-slate-700" />}
-            //   {/* {theme === "dark" ? <Sun size={18} className="text-yellow-400" /> : <Moon size={18} className="text-slate-700" />} */}
-            // </button>
-          )}
+         
         </nav>
 
         {/* Mobile Toggle */}
