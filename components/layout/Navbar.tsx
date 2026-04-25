@@ -55,8 +55,9 @@ export default function Navbar() {
         <a 
           href="#hero" 
           onClick={(e) => handleNavClick(e, "#hero")}
-          className="text-xl font-poppins font-bold text-gradient tracking-tight"
+          className="flex items-center gap-3 text-xl font-poppins font-bold text-gradient tracking-tight"
         >
+          <img src="/icon_portofolio.png" alt="Logo" className="w-8 h-8 rounded-lg shadow-sm border border-slate-200 dark:border-slate-800" />
           Robi Aulia Kurniawan
         </a>
 
@@ -77,18 +78,26 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          
-         
+          {mounted && (
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="ml-2 p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? <Sun size={18} className="text-yellow-400" /> : <Moon size={18} className="text-slate-600" />}
+            </button>
+          )}
         </nav>
 
         {/* Mobile Toggle */}
-        <div className="md:hidden flex items-center space-x-4">
+        <div className="md:hidden flex items-center space-x-2">
           {mounted && (
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              aria-label="Toggle theme"
             >
-              {theme === "dark" ? <Sun size={18} className="text-yellow-400" /> : <Moon size={18} className="text-slate-700" />}
+              {theme === "dark" ? <Sun size={18} className="text-yellow-400" /> : <Moon size={18} className="text-slate-600" />}
             </button>
           )}
           <button

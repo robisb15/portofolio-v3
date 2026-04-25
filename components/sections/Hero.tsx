@@ -2,7 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 
 export default function Hero() {
   const containerVariants: Variants = {
@@ -49,12 +49,12 @@ export default function Hero() {
 
           <motion.h1 
             variants={itemVariants}
-            className="text-5xl md:text-7xl font-bold font-poppins text-slate-800 dark:text-slate-100 tracking-tight"
+            className="text-5xl md:text-6xl font-bold font-poppins text-slate-800 dark:text-slate-100 tracking-tight"
           >
             Hi, I'm <span className="text-gradient">Robi Aulia Kurniawan</span>
           </motion.h1>
 
-          <motion.div variants={itemVariants} className="text-xl md:text-3xl font-medium text-slate-600 dark:text-slate-400 h-16">
+          <motion.div variants={itemVariants} className="text-xl md:text-3xl font-medium text-slate-600 dark:text-slate-300 h-16">
             <TypeAnimation
               sequence={[
                 "Fullstack Developer",
@@ -78,7 +78,7 @@ export default function Hero() {
 
           <motion.p 
             variants={itemVariants}
-            className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto pt-4 text-base md:text-lg"
+            className="text-slate-500 dark:text-slate-300 max-w-2xl mx-auto pt-4 text-base md:text-lg"
           >
             I build fast, accessible, and scalable web applications. Transforming complex problems into elegant digital experiences.
           </motion.p>
@@ -92,11 +92,13 @@ export default function Hero() {
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a 
-              href="#contact" 
+              href="/CV_Robi Aulia Kurniawan.pdf" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-3 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium hover:bg-slate-50 dark:hover:bg-slate-700 transition-all border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-2"
             >
-              Contact Me
-              <Mail size={18} />
+              Download CV
+              <Download size={18} />
             </a>
           </motion.div>
         </motion.div>

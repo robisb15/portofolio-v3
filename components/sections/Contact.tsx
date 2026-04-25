@@ -19,7 +19,7 @@ export default function Contact() {
         >
           <h2 className="text-3xl md:text-5xl font-bold font-poppins mb-4">Get In <span className="text-gradient">Touch</span></h2>
           <div className="w-20 h-1 bg-sky-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-lg">
+          <p className="text-slate-500 dark:text-slate-300 max-w-xl mx-auto text-lg">
             Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.
           </p>
         </motion.div>
@@ -38,7 +38,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-1">Email Me</h3>
-                <a href="mailto:hello@example.com" className="text-slate-500 dark:text-slate-400 hover:text-sky-500 transition-colors">hello@example.com</a>
+                <a href="mailto:hello@example.com" className="text-slate-500 dark:text-slate-300 hover:text-sky-500 transition-colors">robiaulia.k@gmail.com</a>
               </div>
             </div>
 
@@ -48,7 +48,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-1">Location</h3>
-                <p className="text-slate-500 dark:text-slate-400">Jambi, Indonesia (Remote)</p>
+                <p className="text-slate-500 dark:text-slate-300">Jambi, Indonesia</p>
               </div>
             </div>
           </motion.div>
@@ -62,7 +62,7 @@ export default function Contact() {
           >
             <form className="space-y-6">
                <div className="space-y-2">
-                 <label htmlFor="name" className="text-sm font-medium text-slate-700 dark:text-slate-300">Name</label>
+                 <label htmlFor="name" className="text-sm font-medium text-slate-700 dark:text-slate-200">Name</label>
                  <input 
                    type="text" 
                    id="name"
@@ -71,7 +71,7 @@ export default function Contact() {
                  />
                </div>
                <div className="space-y-2">
-                 <label htmlFor="email" className="text-sm font-medium text-slate-700 dark:text-slate-300">Email Address</label>
+                 <label htmlFor="email" className="text-sm font-medium text-slate-700 dark:text-slate-200">Email Address</label>
                  <input 
                    type="email" 
                    id="email"
@@ -80,7 +80,7 @@ export default function Contact() {
                  />
                </div>
                <div className="space-y-2">
-                 <label htmlFor="message" className="text-sm font-medium text-slate-700 dark:text-slate-300">Message</label>
+                 <label htmlFor="message" className="text-sm font-medium text-slate-700 dark:text-slate-200">Message</label>
                  <textarea 
                    id="message"
                    rows={5}

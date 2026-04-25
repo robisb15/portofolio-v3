@@ -34,7 +34,7 @@ export default function TechStack() {
             <h2 className="px-4 text-2xl md:text-3xl font-bold font-poppins tracking-wider text-slate-800 dark:text-slate-100 uppercase">Stacks</h2>
             <div className="flex-1 h-[1px] bg-sky-200 dark:bg-sky-900/50"></div>
           </div>
-          <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base">
+          <p className="text-slate-500 dark:text-slate-300 text-sm md:text-base">
             The core technologies I use to build scalable and reliable applications.
           </p>
         </motion.div>

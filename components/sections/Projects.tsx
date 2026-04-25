@@ -20,7 +20,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-24 bg-slate-50 dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800 rounded-3xl mx-4 md:mx-12 my-12 relative">
+    <section id="projects" className="py-24 bg-slate-50 dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800 rounded-3xl mx-4 md:mx-12 my-12 relative transition-colors duration-300">
       <div className="container mx-auto px-6">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
@@ -31,7 +31,7 @@ export default function Projects() {
         >
           <h2 className="text-3xl md:text-5xl font-bold font-poppins mb-4">Featured <span className="text-gradient">Projects</span></h2>
           <div className="w-20 h-1 bg-sky-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-lg">
+          <p className="text-slate-500 dark:text-slate-300 max-w-xl mx-auto text-lg">
             A selection of my best work, including enterprise systems, internal tools, and personal experiments.
           </p>
         </motion.div>
@@ -61,16 +61,16 @@ export default function Projects() {
                   <a href={project.live} target="_blank" rel="noreferrer" className="w-12 h-12 bg-sky-500 text-white rounded-full flex items-center justify-center hover:bg-sky-600 hover:scale-110 transition-all font-semibold shadow-lg">
                     <ExternalLink size={20} />
                   </a>
-                  <a href={project.github} target="_blank" rel="noreferrer" className="w-12 h-12 bg-white text-slate-800 rounded-full flex items-center justify-center hover:bg-slate-100 hover:scale-110 transition-all font-semibold shadow-lg">
+                  {/* <a href={project.github} target="_blank" rel="noreferrer" className="w-12 h-12 bg-white text-slate-800 rounded-full flex items-center justify-center hover:bg-slate-100 hover:scale-110 transition-all font-semibold shadow-lg">
                     <FaGithub size={20} />
-                  </a>
+                  </a> */}
                 </div>
               </div>
 
               {/* Content Container */}
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2">{project.title}</h3>
-                <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-grow">{project.description}</p>
+                <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 flex-grow">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tags.map(tag => (
                     <span key={tag} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-full border border-slate-200 dark:border-slate-700">
